@@ -1,0 +1,175 @@
+*  {
+    box-sizing: border-box;
+    margin: 0;
+    font-family: graphie,sans-serif;
+    font-style: normal;
+}
+/* Hero section */
+.herosection {
+    background-image: url(../img/mobile_background_2.png);
+    background-position: center;
+    background-size: cover;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    
+}
+.hero-header {
+    color: white;
+    font-size: 10vw;
+    text-transform: uppercase;
+    margin-top: 20vh;  
+    text-align: center;
+    font-weight: 700;
+    filter: drop-shadow(0 0 0.3rem black);
+    line-height: 0.8;
+}
+.hero-header span {
+    font-size: 8vw;
+    font-weight: 700;
+}
+.hero-subtitle {
+    color: white;
+    font-size: 4.6vw;
+    text-align: center;
+}
+.credit {
+    position: fixed;
+    bottom: 0;
+    color: #42CB5D;
+    font-size: 5pt;
+}
+@media only screen and (min-width: 801px) {
+    .herosection {
+        background-image: url(../img/desktop_background_2.png);
+    }
+    .hero-header {
+        font-size: 5.5vw;
+        margin-top: 33vh;
+    }
+    .hero-header span {
+        font-size: 4.3vw;
+        font-weight: 700;
+    }
+    .hero-subtitle {
+        font-size: 2.55vw;
+    }
+    .hero-header, .hero-subtitle {
+        text-align: start;
+        margin-left: 10vw;
+    }
+    .credit {
+        font-size: 10pt;
+    }
+}
+
+/* Text section */
+.textsection {
+    font-size: 1.5em;
+    margin: 15% 5% 15% 5%;
+}
+
+.appstore-icon img {
+    max-width: 150px;
+    margin-top: 8%;
+}
+@media only screen and (min-width: 1201px) {
+    .textsection {
+        font-size: 2.6em;
+        margin: 10% 30% 10% 30%;
+    }
+    .appstore-icon {
+        display: flex;
+        justify-content: space-around;
+    }
+    .appstore-icon img {
+        max-width: 300px;
+    }
+}
+
+
+/*SEO BLOG SJOV*/
+.seo-blog {
+    margin: 15% 20% 15% 20%;
+}
+.seo-blog div {
+    margin: 50px 0 50px 0;
+}
+.seo-blog img {
+    max-width: 100%;
+    margin: 10px 0 10px 0;
+}
+
+@media only screen and (min-width: 1201px) {
+    .seo-blog {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        margin: 10% 20% 10% 20%;
+    }
+    .seo-blog div {
+        margin: 0 10% 0 10%;
+    }
+}
+
+@media only screen and (max-width: 1200px) and (min-width: 800px) {
+    .seo-blog {
+        margin: 10% 5% 10% 5%;
+    }
+}
+
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 10%;
+    background-color: #464646;
+    color: white;
+    line-height: 150%;
+}
+.logo {
+    max-width: 60px;
+    padding-top: 30px;
+}
+
+@media only screen and (min-width: 801px) {
+    footer {
+        font-size: 2em;
+        padding: 5%;
+    }
+    .logo {
+        max-width: 150px;
+    }
+}
+
+/* Buttons */
+.button {
+    border-radius: 69px;
+    background-color: #42CB5De7;
+    color: white;
+    padding: 15px 32px;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 2.5vw;
+    margin: 4px 2px;
+    cursor: pointer;
+}
+.button:hover {
+    background-color: #464646;
+    color: #42CB5D;
+    border: solid;
+    border-color: #42CB5D;
+}
+.flexcontainer2 {
+    text-align: center;
+    margin-top: 20px;
+}
+@media only screen and (min-width: 801px) {
+    .button {
+        font-size: 1.5vw;
+        margin: 8px 20px 0px 0px;
+    }
+    .flexcontainer2 {
+        text-align: start;
+        margin-left: 10vw;
+    }
+}
